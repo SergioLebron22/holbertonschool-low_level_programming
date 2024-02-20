@@ -8,7 +8,6 @@
  */
 int main(void)
 {
-	char sring[] = ""Programming is like building a multilingual puzzle \n";
-	puts(string);	
+	puts(""Programming is like building a multilingual puzzle");
 	return (0);
 }
