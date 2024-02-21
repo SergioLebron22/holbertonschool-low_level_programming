@@ -4,7 +4,7 @@
 /**
  * print_alphabet - this program will print the alphabet in lower
  *
- * Return: Always 0(Success)
+ * Return: void
  */
 
 void print_alphabet(void)
