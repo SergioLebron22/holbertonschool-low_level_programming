@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * swap - will swap the values of two integers
+ * swap_int - will swap the values of two integers
  *
  * @a: arg number being swapped
  *
