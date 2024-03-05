@@ -4,8 +4,8 @@
 /**
  * main - will print its name
  *
- * @argc - arg count
- * @argv - arg vector
+ * @argc: arg count
+ * @argv: arg vector
  *
  * Return: command name
  */
