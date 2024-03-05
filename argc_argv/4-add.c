@@ -19,7 +19,10 @@ int main(int argc, char **argv)
 	char *num;
 
 	if (argc == 1)
-		printf("%d\n", 0);
+	{
+		printf("%d\n", sum);
+		return  (0);
+	}
 
 	for (i = 1; i < argc; i++)
 	{
