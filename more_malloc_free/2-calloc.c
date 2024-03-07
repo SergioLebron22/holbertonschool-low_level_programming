@@ -13,19 +13,22 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned int total_size = nmemb * size;
+	void *arr = NULL;
 	unsigned int i;
-	void *allocated_memory = malloc(total_size);
+	unsigned int a;
+	char *t;
 
-	if (allocated_memory != NULL)
+	if (size == 0 || nmemb == 0)
+		return (NULL);
+	a = nmemb * size;
+	arr = malloc(a);
+	t = (char *)arr;
+	if (t != NULL)
 	{
-		char *ptr = (char *)allocated_memory;
-
-		for (i = 0; i < total_size; i++)
-		{
-			ptr[i] = 0;
-		}
+		for (n = 0; n < a; n++)
+			t[n] = 0;
+		return (t);
 	}
-	return (allocated_memory);
+	return (NULL);
 }
 
