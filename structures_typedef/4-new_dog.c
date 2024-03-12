@@ -30,7 +30,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (name2 != NULL)
 	{
 		for (i = 0; i <= n; i++)
-			*(name2 + i) = *(name + 1);
+			*(name2 + i) = *(name + i);
 	}
 	else
 	{
