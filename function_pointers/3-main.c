@@ -13,12 +13,8 @@
 
 int main(int argc, char *argv[])
 {
-	int num1, num2;
+	int num1, num2 = 0;
 	int result;
-
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[3]);
-
 
 	if (argc != 4)
 	{
@@ -35,6 +31,8 @@ int main(int argc, char *argv[])
 
 	if (argv[2][1] == '\0')
 	{
+		num1 = atoi(argv[1]);
+		num2 = atoi(argv[2]);
 		result = (*get_op_func(argv[2]))(num1, num2);
 		printf("%d\n", result);
 	}
