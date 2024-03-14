@@ -13,6 +13,7 @@
 void printC(va_list args)
 {
 	int c = va_arg(args, int);
+
 	printf("%c", c);
 }
 
@@ -40,6 +41,7 @@ void printI(va_list args)
 void printFl(va_list args)
 {
 	double f = va_arg(args, double);
+
 	printf("%f", f);
 }
 
@@ -64,7 +66,7 @@ void printStr(va_list args)
 }
 
 /**
- * pirnt_all - will print anything
+ * print_all - will print anything
  *
  * @format: format
  *
