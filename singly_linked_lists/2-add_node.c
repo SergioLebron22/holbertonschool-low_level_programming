@@ -23,9 +23,9 @@ list_t *add_node(list_t **head, const char *str)
 	if (!new->str)
 	{
 		free(new);
-		return(NULL);
+		return (NULL);
 	}
-	
+
 	new->len = _strlenRecursive(new->str);
 	new->next = *head;
 	*head = new;
@@ -34,7 +34,7 @@ list_t *add_node(list_t **head, const char *str)
 }
 
 /**
- * strlenRecursive - returns the length of a string
+ * _strlenRecursive - returns the length of a string
  * @str: string
  * Return: length of string
  */
