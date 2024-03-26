@@ -28,8 +28,8 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	new->len = _strlenRecursive(new->str);
 	new->next = NULL;
-	
-	if(aux)
+
+	if (aux)
 	{
 		while (aux->next)
 			aux = aux->next;
